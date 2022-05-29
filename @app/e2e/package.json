@@ -1,0 +1,18 @@
+{
+  "name": "@app/e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "James Meneghello",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.0.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "build": "echo Not available.",
+    "start": "echo Not available.",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "echo Not available."
+  }
+}

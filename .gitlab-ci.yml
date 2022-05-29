@@ -1,0 +1,28 @@
+image: node:16
+
+stages:         
+  - build
+  - test
+
+before_script:
+    - yarn
+
+cache:
+    paths:
+        - "node_modules/"
+
+build:
+  stage: build
+  script:
+    - yarn build
+
+test:
+  stage: test
+  script:
+    - yarn test
+
+e2e:
+    image: cypress/browsers:node14.17.0-chrome91-ff89
+    stage: test
+    script:
+        - yarn e2e
